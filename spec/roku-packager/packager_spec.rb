@@ -18,7 +18,7 @@ describe RokuPackager::Packager do
   describe '#submit' do
     it 'builds a download url for the submitted package' do
       @packager.expects(:submission_response).returns(nil)
-      @packager.expects(:pull_out_relative_package_path).returns('pkg/blah.zip')
+      @packager.expects(:pull_out_relative_package_path).returns([nil,'pkg/blah.zip'])
 
       @packager.submit.must_equal URI('http://192.168.0.10/pkg/blah.zip')
     end

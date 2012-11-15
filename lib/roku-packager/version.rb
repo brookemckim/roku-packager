@@ -1,5 +1,3 @@
-module Roku
-  module Packager
-    VERSION = "0.0.1"
-  end
+module RokuPackager
+  VERSION = "0.0.1"
 end

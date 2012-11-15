@@ -1,8 +1,11 @@
 require 'rest-client'
+require 'uri'
 require 'time'
 
 module RokuPackager
   class Packager
+    class PackagingError < StandardError; end
+
     def initialize(host, name_and_version, password)
       @host = host
       @name_and_version = name_and_version
@@ -10,7 +13,11 @@ module RokuPackager
     end
 
     def submit
-      relative_path = pull_out_relative_package_path(submission_response)
+      if relative_path_match = pull_out_relative_package_path(submission_response)
+        relative_path = relative_path_match[1]
+      else
+        raise PackagingError, submission_response
+      end
 
       URI::HTTP.build(host: @host, path: '/' + relative_path)
     end
@@ -32,7 +39,7 @@ module RokuPackager
     private
 
       def pull_out_relative_package_path(html_body)
-        /a href=\\"(pkgs\S*)\\">/.match(html_body)[1]
+        /a href="(pkgs\S*)">/.match(html_body)
       end
   end
 end

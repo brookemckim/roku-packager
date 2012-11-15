@@ -5,7 +5,7 @@ require 'roku-packager/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "roku-packager"
-  gem.version       = Roku::Packager::VERSION
+  gem.version       = RokuPackager::VERSION
   gem.authors       = ["brookemckim"]
   gem.email         = ["brooke.mckim@gmail.com"]
   gem.description   = %q{TODO: Write a gem description}

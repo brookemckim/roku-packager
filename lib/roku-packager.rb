@@ -1,10 +1,8 @@
 require 'roku-packager/version'
-require 'roku-packager/key_gen'
-require 'roku-packager/uploader'
-require 'roku-packager/packager'
+require 'roku-packager/client'
 
-module Roku
-  module Packager
-
+module RokuPackager
+  def self.new(*args)
+    Client.new(*args)
   end
 end
