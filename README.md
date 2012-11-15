@@ -2,9 +2,9 @@
 
 Roku Packager is a ruby library for uploading and packaging Roku
 applications. Normally this interaction has to be done through the
-clunky Roku web GUI. Given a Roku with the installer enabled and a compiled zip
+clunky Roku web GUI. Given an installer enabled Roku and a compiled zip
 of your code you can pass it to Roku Packager and it will return the url
-to dowload the pkg file that is ready for upload to roku.com.
+to download the pkg file that is ready for upload to roku.com.
 
 [![BuildStatus](https://travis-ci.org/brookemckim/roku-packager.png)](https://travis-ci.org/brookemckim/roku-packager)
 [![CodeClimate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/brookemckim/roku-packager)
