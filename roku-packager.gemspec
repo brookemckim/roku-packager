@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = RokuPackager::VERSION
   gem.authors       = ["brookemckim"]
   gem.email         = ["brooke.mckim@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Ruby library for packaging Roku applications. Requires a Roku in development mode and a zipped up application.}
+  gem.summary       = %q{Package roku applications from within Ruby.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
