@@ -1,5 +1,8 @@
 # Roku::Packager
 
+[![BuildStatus](https://travis-ci.org/brookemckim/roku-packager.png)](https://travis-ci.org/brookemckim/roku-packager)
+[![CodeClimate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/brookemckim/roku-packager)
+
 TODO: Write a gem description
 
 ## Installation
