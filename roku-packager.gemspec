@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["brooke.mckim@gmail.com"]
   gem.description   = %q{Ruby library for packaging Roku applications. Requires a Roku in development mode and a zipped up application.}
   gem.summary       = %q{Package roku applications from within Ruby.}
-  gem.homepage      = ""
+  gem.homepage      = "http://github.com/brookemckim/roku-packager"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
