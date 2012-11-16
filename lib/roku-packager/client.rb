@@ -4,7 +4,7 @@ require 'roku-packager/packager'
 
 module RokuPackager
   class Client
-    def initialize(development_roku_ip, logger = NullLogger)
+    def initialize(development_roku_ip, logger = NullLogger.new)
       @host = development_roku_ip
       @logger = logger
     end
