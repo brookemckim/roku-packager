@@ -26,7 +26,7 @@ module RokuPackager
   end
 
   class NullLogger
-    def info
+    def info(*args)
     end
   end
 end
